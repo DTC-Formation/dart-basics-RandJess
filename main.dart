@@ -36,23 +36,15 @@ isUppercase(String str) {
     for (var el in voyelle) {
       if (strLowerCase[i] == el) {
         statCase = true;
-        print('object');
-      } else {
-        print('tsy object');
+        break;
       }
     }
-    // if (statCase) {
-    //   return true;
-    // } else {
-    //   return false;
-    // }
-
-    return i;
+    print("${dict[i]} : $statCase");
   }
 }
 
 void main() {
   // print(factoriel(2));
   // print(puissance(4, 13));
-  print(isUppercase('test'));
+  print(isUppercase('tsteta'));
 }
