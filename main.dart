@@ -32,12 +32,14 @@ isVoyelle(String str) {
   bool statCase = false;
 
   for (var i = 0; i < strLowerCase.length; i++) {
+    // print(i);
     dict.add(strLowerCase[i]);
     for (var el in voyelle) {
       if (strLowerCase[i] == el) {
         statCase = true;
         break;
-      }
+      } else
+        (statCase = false);
     }
     print("${dict[i]} : $statCase");
   }
@@ -46,5 +48,5 @@ isVoyelle(String str) {
 void main() {
   // print(factoriel(2));
   // print(puissance(4, 13));
-  print(isVoyelle('tsteta'));
+  print(isVoyelle('atest'));
 }
