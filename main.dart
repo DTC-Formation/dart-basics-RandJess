@@ -17,7 +17,7 @@ int puissance(int a, int b) {
 //Mampiditra lettre de mamoka hoe consonne sa voyelle le izy
 // anaty tableau ilay consonne ou autre retra dia zay tsy ao tode voyelle
 var voyelle = ["a", "e", "i", "o", "u", "y"];
-isUppercase(String str) {
+isVoyelle(String str) {
   var strLowerCase = str.toLowerCase();
   var dict = []; //au final ceci va renfermer chaque lettre du mot
   // for (var i = 0; i < str.length; i++) {
@@ -46,5 +46,5 @@ isUppercase(String str) {
 void main() {
   // print(factoriel(2));
   // print(puissance(4, 13));
-  print(isUppercase('tsteta'));
+  print(isVoyelle('tsteta'));
 }
